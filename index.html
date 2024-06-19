@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <script src="script.js"></script>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            nav {
+                background-color: #444;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: block;
+            }
+            nav a:hover {
+                background-color: #666;
+            }
+            .container {
+                max-width: 960px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                margin: 20px auto;
+            }
+            .skills-bar {
+                background-color: #ddd;
+                border-radius: 25px;
+                margin: 10px 0;
+                overflow: hidden;
+            }
+            .skills-bar div {
+                background-color: #4caf50;
+                height: 24px;
+                width: 0;
+                text-align: center;
+                line-height: 24px;
+                color: white;
+                transition: width 1s;
+            }
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .contact-form input, .contact-form textarea {
+                margin: 10px 0;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .contact-form button {
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                background-color: #4caf50;
+                color: white;
+                cursor: pointer;
+            }
+            .contact-form button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Portfolio</h1>
+            <img src="public/public/profile.jpg" alt="Profile Picture" class="profile-picture">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">My Bio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    Greetings and welcome to my Portfolio. <br>
+                    My name is Ella Nandwa, a software developer.I specialize  in creating applications and programming
+                    languages like html,python,javascript MySql and C++.
+                </p>
+                <p><a href="resume.pdf" download>Download my Resume</a></p>
+            </section>
+            <section id="projects">
+                <h2>Projects I have worked on</h2>
+                <div class="project-carousel">
+                    <!-- Add carousel or gallery here -->
+                    <ol>
+                        <li>Learning Management System</li>
+                        <li>Task Management System</li>
+                        <li>To-Do-List Application</li>
+                        <li>Recipe App
+                            <ul>
+                                <li>Recipe Categories</li>
+                                <li>Database of recipes with ingredients and instructions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-bar">
+                    <div style="width: 90%;">HTML</div>
+                </div>
+                <div class="skills-bar">
+                    <div style="width: 85%;">CSS</div>
+                </div>
+                <div class="skills-bar">
+                    <div style="width: 80%;">JavaScript</div>
+                </div>
+                <div class="skills-bar">
+                    <div style="width: 75%;">Python</div>
+                </div>
+                <div class="skills-bar">
+                    <div style="width: 70%;">Dart</div>
+                </div>
+                <div class="skills-bar">
+                    <div style="width: 65%;">Databases</div>
+                </div>
+            </section>
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <p>"Ella is a highly skilled developer who always delivers on time." - Aishah Mohamed,Fullstack developer</p>
+                <p>"Her problem-solving skills are exceptional, and she is a pleasure to work with." - John Njau, CTO of Tech Solutions</p>
+            </section>
+            <section id="contacts">
+                <h2>Get in touch with me</h2>
+                <p>Email: <a href="mailto:ellanandwa254@gmail.com">ellanandwa254@gmail.com</a></p>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Ella Nandwa. All rights reserved.</p>
+            <p>
+                <a href="https://www.linkedin.com/in/ella-nandwa" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/ella-nandwa" target="_blank">GitHub</a> |
+                <a href="https://twitter.com/ella_nandwa" target="_blank">Twitter</a>
+            </p>
+        </footer>
+        <script>
+            // Add JavaScript for interactive elements here, e.g., skills bar animation
+            window.addEventListener('scroll', () => {
+                const skillsBars = document.querySelectorAll('.skills-bar div');
+                skillsBars.forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = '0';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 500);
+                });
+            });
+        </script>
+    </body>
+</html>

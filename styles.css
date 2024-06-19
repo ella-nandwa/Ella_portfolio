@@ -1,0 +1,91 @@
+             body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            nav {
+                background-color: #444;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: block;
+            }
+            nav a:hover {
+                background-color: #666;
+            }
+            .container {
+                max-width: 960px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                margin: 20px auto;
+            }
+            .skills-bar {
+                background-color: #ddd;
+                border-radius: 25px;
+                margin: 10px 0;
+                overflow: hidden;
+            }
+            .skills-bar div {
+                background-color: #4caf50;
+                height: 24px;
+                width: 0;
+                text-align: center;
+                line-height: 24px;
+                color: white;
+                transition: width 1s;
+            }
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .contact-form input, .contact-form textarea {
+                margin: 10px 0;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .contact-form button {
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                background-color: #4caf50;
+                color: white;
+                cursor: pointer;
+            }
+            .contact-form button:hover {
+                background-color: #45a049;
+            }
